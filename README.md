@@ -76,7 +76,11 @@ php artisan key:generate
 6. Run database migrations
 
 php artisan migrate
-7. Start the Laravel development server
+
+7.
+Add all countries
+php artisan db:seed --class=CountriesSeeder 
+8. Start the Laravel development server
 
 php artisan serve
 Now the app will be available at:
