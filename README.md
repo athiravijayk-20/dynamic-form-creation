@@ -1,41 +1,83 @@
-<<<<<<< HEAD
-# [Buy Me a Coffee](https://buymeacoffee.com/eraufi)
-# My Laravel Projects
+# Dynamic Form Creation Project
 
-Welcome to my collection of Laravel projects! Below is a table of the projects I've worked on, each with a brief description and a link to its corresponding YouTube video.
+This project is a **dynamic form builder** developed with Laravel and SQLite as the backend database. It uses **FormBuilder.js** on the frontend to allow creating, editing, showing, and deleting forms dynamically, with data operations dependent on the selected country.
 
-| Number | Project Name                            | YouTube Link                          |
-|--------|-----------------------------------------|---------------------------------------|
-| 1      | Full Calendar                           | [Video](https://youtu.be/KzZR9A7Xk14) |
-| 2      | Drop Zone                               | [Video](https://youtu.be/SdwA3YKW35g) |
-| 3      | Auto-Suggest Search                     | [Video](https://youtu.be/7nvN0q77P-k) |
-| 4      | Lazy Load                               | [Video](https://youtu.be/5eG3PIriMgU) |
-| 5      | Excel Import and Export                 | [Video](https://youtu.be/BKPkN7XEwxA) |
-| 6      | PDF Generate                            | [Video](https://youtu.be/my9XgQHQoKM) |
-| 7      | CRUD                                    | [Video](https://youtu.be/gVP0EIS5j5A) |
-| 8      | CSV Import and Export                   | [Video](https://youtu.be/6tEsCSatPXE) |
-| 9      | Login using Name, Email or Phone number | [Video](https://youtu.be/ktTK2LZcyk4) |
-| 10     | Weather                                 | [Video](https://youtu.be/Hyw8w65Ru5U) |
-| 11     | Encrypt and Decrypt                     | [Video](https://youtu.be/E40z1dDL0YY) |
-| 12     | Form Builder                            | [Video](https://youtu.be/VXFSe-D5SCA) |
-| 13     | Image Cropper                           | [Video](https://youtu.be/zT3somYJGAE) |
-| 14     | Laravel Dusk Test                       | [Video](https://youtu.be/wNQxHo7Xj6M) |
-| 15     | Jquery Datatable                        | [Video](https://youtu.be/RRS7zW2SwIg) |
-| 16     | Change Language                         | [Video](https://youtu.be/ZrabCjtIaCg) |
-| 17     | Laravel SSE (Real time Notification)    | [Video](https://youtu.be/A7I8r3Fhrww) |
-| 18     | Chat Application                        | [Video](https://youtu.be/Dcnud0U5-6E) |
-| 19     | Custom Helper                           | [Video](https://youtu.be/5F_gRvkCoNM) |
-| 20     | Push Notification                       | [Video](https://youtu.be/AOLigc0T5tc) |
-| 21     | Roles And Permission                    | [Video](https://youtu.be/EiZPls4UcH4) |
-| 22     | File Management                         | [Video](https://youtu.be/tt4HOOQ-rCc) |
-| 23     | Auto Complete Search                    | [Video](https://youtu.be/s362UfaMKtg) |
-| 23     | Live Dashboard                          | [Video](https://youtu.be/QPD3CRqSpPM) |
-| 24     | Kanban Board                            | [Video](https://youtu.be/VLsnsLz4iwU) |
-| 25     | Select2                                 | [Video](https://youtu.be/fXdbiTIcXpw) |
-| 26     | Multi Database Connection               | [Video](https://youtu.be/kj-SjBFcxl4) |
-| 27     | Array And Object Validations            | [Video](https://youtu.be/1B66fjZvGEE) |
-| 28     | Log and Debug SQL Queries in Laravel    | [Video](https://youtu.be/9dDLp7uISjU) |
-=======
-# dynamic-form-creation
-Test
->>>>>>> 73199ce3e3d260a6bec7bfff4f37f2190d6a03d0
+---
+
+## ✨ Features
+
+- **Dynamic Form Creation**: Build custom forms with drag-and-drop using FormBuilder.js.
+- **CRUD Operations**: Create, edit, view, and delete forms.
+- **Country-Based Logic**: Forms can be customized and filtered based on the selected country.
+- **SQLite Database**: Lightweight database management using SQLite.
+- **Editable Labels**: Modify field labels dynamically after form creation.
+- **Bootstrap UI**: Responsive and user-friendly interface using Bootstrap.
+- **AJAX Integration**: Smooth user experience with asynchronous requests.
+
+---
+
+## 🧰 Technologies Used
+
+- Laravel (PHP Framework)
+- SQLite (Database)
+- FormBuilder.js (Drag-and-drop form builder)
+- Bootstrap (UI Framework)
+- AJAX (for smooth interactivity)
+
+---
+
+## 🛠️ How It Works
+
+1. User selects a country.
+2. Forms can be created, edited, or filtered based on the selected country.
+3. All form fields are editable, including labels.
+4. Data is saved in a local SQLite database.
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/athiravijayk-20/dynamic-form-creation.git
+cd dynamic-form-creation
+2. Install dependencies with Composer
+Make sure Composer is installed, then run:
+
+
+composer install
+Or update packages if needed:
+
+
+composer update
+3. Set up environment variables
+Copy the example .env file:
+
+
+cp .env.example .env
+Update your .env file for SQLite:
+
+
+DB_CONNECTION=sqlite
+DB_DATABASE=/absolute/full/path/to/database/database.sqlite
+Replace /absolute/full/path/to/... with the actual full path on your system (e.g., C:/xampp/htdocs/dynamic_form/database/database.sqlite on Windows).
+
+4. Create the SQLite database file
+
+touch database/database.sqlite
+On Windows, you can manually create the file in your file explorer inside the database/ folder.
+
+5. Generate the application key
+
+php artisan key:generate
+6. Run database migrations
+
+php artisan migrate
+7. Start the Laravel development server
+
+php artisan serve
+Now the app will be available at:
+👉 http://127.0.0.1:8000
