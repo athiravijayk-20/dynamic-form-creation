@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Buy Me a Coffee](https://buymeacoffee.com/eraufi)
 # My Laravel Projects
 
@@ -34,3 +35,7 @@ Welcome to my collection of Laravel projects! Below is a table of the projects I
 | 26     | Multi Database Connection               | [Video](https://youtu.be/kj-SjBFcxl4) |
 | 27     | Array And Object Validations            | [Video](https://youtu.be/1B66fjZvGEE) |
 | 28     | Log and Debug SQL Queries in Laravel    | [Video](https://youtu.be/9dDLp7uISjU) |
+=======
+# dynamic-form-creation
+Test
+>>>>>>> 73199ce3e3d260a6bec7bfff4f37f2190d6a03d0
